@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px 25px;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+
+.header-wrapper {
+  background: #BE1D2C;
+}
+
+nav {
+  background-color: black;
+}
+
+.nav-wrapper {
+  background: black;
+  display: flex;
+  height: 10vh;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  width: 80px;
+}
+
+.hamburger {
+  height: 4px;
+  width: 42px;
+  background-color: #BE1D2C;
+  border-radius: 10px;
+}
+
+.header__hero {
+  height: 90vh;
+  background-color: rgba(190, 29, 44, 0.75);
+}
+.header__hero h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1;
+}
+.header__hero h4 {
+  font-size: 1.5rem;
+  color: #efefef;
+  font-weight: 300;
+}
+.header__hero ::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: url("/hero-mobile.db95eb77.jpg") no-repeat center center/cover;
+  z-index: -1;
+}
+
+.header__hero__big_text {
+  padding: 25px 25px;
+}
+
+.about__wrapper h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.underline::after {
+  content: "";
+  height: 4px;
+  width: 154px;
+  background-color: #BE1D2C;
+  display: flex;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
