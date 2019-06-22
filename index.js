@@ -1,28 +1,47 @@
 import smoothscroll from 'smoothscroll-polyfill';
 
- 
+
 // kick off the polyfill!
 smoothscroll.polyfill();
 
 console.log('hello world')
 
-var mobileMenu = function(){
-    $('#hamburger, nav ul li a').click(function(){
-        $('#hamburger').toggleClass('open');
-        $('ul').toggleClass('mobile-menu');
-        $('#hamburger').toggleClass('fixed');
-    });
-};
 
-// var closeMenu = function (){
-// 	$('nav ul li a').click(function(){
-// 		$('#hamburger').click().addClass('open');
-// 		$('#hamburger').click().removeClass('fixed');
-// 		$('ul').click().removeClass('mobile-menu');
-// 	});
+
+// var mobileMenu = function(){
+//     $('#hamburger, nav ul li a').click(function(){
+//         $('#hamburger').toggleClass('open fixed');
+//         $('ul').toggleClass('mobile-menu');
+//         // $('#hamburger').toggleClass('fixed');
+//     });
 // };
 
 
-// closeMenu();
-mobileMenu();
 
+// mobileMenu();
+
+let hamburger = document.querySelector('#hamburger');
+let mobileMenu = document.querySelector('ul');
+let menuLinks = document.querySelectorAll('.menuLink');
+
+console.log(menuLinks)
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    hamburger.classList.toggle('fixed');
+    mobileMenu.classList.toggle('mobile-menu');
+})
+
+
+for (let i = 0; i < menuLinks.length; ++i) {
+    menuLinks[i].addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        hamburger.classList.remove('fixed');
+        mobileMenu.classList.remove('mobile-menu');
+});
+  };
+
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
