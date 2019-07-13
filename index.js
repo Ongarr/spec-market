@@ -1,23 +1,3 @@
-import smoothscroll from 'smoothscroll-polyfill';
-
-
-// kick off the polyfill!
-smoothscroll.polyfill();
-
-console.log('hello world')
-
-
-
-// var mobileMenu = function(){
-//     $('#hamburger, nav ul li a').click(function(){
-//         $('#hamburger').toggleClass('open fixed');
-//         $('ul').toggleClass('mobile-menu');
-//         // $('#hamburger').toggleClass('fixed');
-//     });
-// };
-
-
-
 // mobileMenu();
 
 let hamburger = document.querySelector('#hamburger');
