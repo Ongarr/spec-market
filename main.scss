@@ -70,12 +70,13 @@ h4 {
 
 .container {
   width: 100%;
+  padding: 50px 0px;
 }
 
 .row {
   max-width: 1200px;
   margin: auto;
-  padding: 85px 25px;
+  padding: 50px 25px;
 }
 
 .txt-center {
@@ -89,6 +90,10 @@ h4 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 50px;
+}
+
+.text-para {
+  margin-bottom: 30px;
 }
 
 .column__image {
@@ -287,11 +292,11 @@ nav {
 }
 
 .header__hero__mainpage::before {
-  background: url("/Spec.market.jpg") no-repeat center center / cover;
+  background: url("/assets/images/Spec.market.jpg") no-repeat center center / cover;
 }
 
 .header__hero__festool::before {
-  background: url("/elektronarzenia-festool-header.jpg") no-repeat center center / cover;
+  background: url("/assets/images/elektronarzenia-festool-header.jpg") no-repeat center center / cover;
 }
 
 /* -----CONTENT----- */
