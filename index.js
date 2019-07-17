@@ -4,7 +4,6 @@ let hamburger = document.querySelector('#hamburger');
 let mobileMenu = document.querySelector('ul');
 let menuLinks = document.querySelectorAll('.menuLink');
 
-console.log(menuLinks)
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url ./",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url ./spec-market",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],

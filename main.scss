@@ -60,6 +60,7 @@ h2 {
   font-size: 2.0rem;
   text-transform: uppercase;
   margin: 0px;
+  text-align: center;
 }
 
 h4 {
@@ -76,20 +77,26 @@ h4 {
 .row {
   max-width: 1200px;
   margin: auto;
-  padding: 50px 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.txt-center {
+.center-item {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.flex {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 50px;
+.center-txt {
+  text-align: center;
+}
+
+.column-padding {
+  padding: 20px;
 }
 
 .text-para {
@@ -268,7 +275,7 @@ nav {
 .header__hero__text {
   h2 {
     font-family: "Titillium Web", sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 800;
     line-height: 1;
@@ -309,14 +316,15 @@ nav {
   width: 200px;
   background-color: $red;
   display: flex;
+  position: relative;
+  margin: 10px auto;
   border-radius: 10px;
   margin-bottom: 25px;
 }
 
 .icons {
   bottom: 0px;
-  position: absolute;
-  margin-bottom: 25px;
+  margin-top: 30px;
   color: white;
   animation-name: appear;
   animation-duration: 1s;
@@ -341,18 +349,17 @@ nav {
     padding-left: 20px;
     font-family: 'Titillium Web', sans-serif;
   }
-
-  .opening__text {}
 }
 
 
 
 
 #tikurilla {
-  background-color: #5a5a5a;
+  background-image: linear-gradient(to bottom right, #5a5a5a, #636363);
 
-  img:nth-child(1) {
+  .logo-brand{
     width: 250px;
+    margin: 0 auto;
   }
 
   p {
@@ -365,10 +372,10 @@ nav {
   background-color: #efefef;
   color: #5a5a5a;
 
-  img:first-child {
+  .logo-brand {
     width: 250px;
-    margin-bottom: 25px;
-
+    padding-bottom: 20px;
+    margin: 0 auto;
   }
 }
 
@@ -395,7 +402,6 @@ nav {
 
 img.row__images {
   width: 100%;
-  border-radius: 20px;
 }
 
 #contact {
@@ -413,17 +419,27 @@ img.row__images {
     margin-top: 100px;
   }
 
-  .reverse__mobile {
-    flex-direction: column-reverse;
-  }
+  
+
+ 
+  
 }
 
 @media (min-width: 1090px) {
-  .flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 65px;
-    justify-items: center;
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .column-padding {
+    padding: 50px;
+  }
+  
+  .reverse-column {
+    flex-flow: row-reverse;
   }
 
   #hamburger {
