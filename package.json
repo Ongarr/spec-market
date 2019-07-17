@@ -2,10 +2,10 @@
   "name": "spec.market",
   "version": "1.0.0",
   "description": "Website for spec.market made in 2019",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url ./spec-market",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
