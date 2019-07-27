@@ -3,32 +3,32 @@ $red: #be1d2c;
 $redhero: rgba(190, 29, 44, 0.75);
 $lightgrey: rgba(239, 239, 239, 1);
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 
 @keyframes appear {
   from {
     opacity: 0;
-    transform: translateX(-500px)
+    transform: translateX(-500px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
 }
 
 @keyframes jump {
   0% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 
   50% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 
   100% {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
 }
 
@@ -44,8 +44,9 @@ $lightgrey: rgba(239, 239, 239, 1);
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 14px;
   min-height: 100%;
+  background-color: #fafafa;
 }
 
 b {
@@ -54,10 +55,11 @@ b {
 
 p {
   font-weight: 400;
+  font-size: 1em;
 }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin: 0px;
   text-align: center;
@@ -65,8 +67,7 @@ h2 {
 
 h4 {
   font-size: 1rem;
-  font-family: 'Titillium Web', sans-serif;
-
+  font-family: "Titillium Web", sans-serif;
 }
 
 .container {
@@ -75,12 +76,19 @@ h4 {
 }
 
 .row {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  
 }
 
 .center-item {
@@ -96,22 +104,22 @@ h4 {
 }
 
 .column-padding {
-  padding: 20px;
+  padding: 30px;
 }
 
 .text-para {
   margin-bottom: 30px;
 }
 
-.column__image {
-  img {
-    width: 100%;
-  }
-}
 
 .fixed {
   position: fixed !important;
   right: 25px;
+}
+
+.column__text {
+  width: 100%;
+  padding: 0px 25px;
 }
 
 /* -----HEADER----- */
@@ -140,7 +148,7 @@ nav {
     justify-content: space-between;
     padding: 0 20px;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1060px;
     margin: auto;
 
     a.logo img {
@@ -184,13 +192,16 @@ nav {
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-family: 'Titillium Web', sans-serif;
+      font-family: "Titillium Web", sans-serif;
       text-transform: uppercase;
       font-weight: bold;
+      font-size: 1.3em;
+      transition: background-color 0.2s linear;
     }
 
     li a:hover {
-      color: $red;
+      color: black;
+      background-color: $redhero;
     }
   }
 }
@@ -269,20 +280,19 @@ nav {
 
 .header__hero {
   height: calc(100% - 70px);
-  background-color: $redhero;
 }
 
 .header__hero__text {
   h2 {
     font-family: "Titillium Web", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 800;
     line-height: 1;
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: $lightgrey;
     font-weight: 300;
   }
@@ -298,17 +308,31 @@ nav {
   z-index: -1;
 }
 
+.header__hero__mainpage {
+  background-color: $redhero;
+}
+
 .header__hero__mainpage::before {
-  background: url("/assets/images/Spec.market.jpg") no-repeat center center / cover;
+  background: url("/assets/images/Spec.market.jpg") no-repeat center center /
+    cover;
 }
 
 .header__hero__festool::before {
-  background: url("/assets/images/elektronarzenia-festool-header.jpg") no-repeat center center / cover;
+  background: url("/assets/images/elektronarzenia-festool-header.jpg") no-repeat
+    center center / cover;
+}
+
+.header__hero__tikkurila::before {
+  background: url("/assets/images/tikkurila-header.jpg") no-repeat center center / cover;
+}
+
+.hero__text__wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 /* -----CONTENT----- */
-
-
 
 .underline::after {
   content: "";
@@ -345,19 +369,16 @@ nav {
   margin-bottom: 25px;
 
   p {
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 20px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
   }
 }
-
-
-
 
 #tikurilla {
   background-image: linear-gradient(to bottom right, #5a5a5a, #636363);
 
-  .logo-brand{
+  .logo-brand {
     width: 250px;
     margin: 0 auto;
   }
@@ -392,7 +413,6 @@ nav {
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-
 }
 
 .header__logo {
@@ -402,42 +422,76 @@ nav {
 
 img.row__images {
   width: 100%;
+  height: 100%;
 }
 
 #contact {
+  background: url("/assets/images/contact-bg.jpg") no-repeat center / cover;
+  margin-top: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  
+  h2 {
+    color: white;
+    font-size: 3rem;
+  }
 
+  .underline::after {
+    background-color: $black;
+  }
 
   .column__text__map {
     width: 100%;
   }
 
-  .column__text__contact img {
-    color: red;
+  .column__contact-info {
+    padding: 0px 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .column__text_contact__icon {
-    margin-top: 100px;
+  .column__text_contact__icon p, .column__text_contact__icon a{
+    color: white;
   }
-
-  
-
- 
-  
 }
 
-@media (min-width: 1090px) {
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+@media (min-width: 768px) {
+  p {
+    font-size: 1.0em;
   }
 
+  .column {
+    flex-basis: 50%;
+  }
+
+  .reverse-column {
+    flex-flow: row-reverse;
+  }
+}
+
+@media (min-width: 560px) {
+  .header__hero__big_text {
+    h2 {
+    font-size: 4rem;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  p {
+    font-size: 1.3em;
+  }
+  
   .column-padding {
     padding: 50px;
   }
-  
+
+  .column {
+    flex-basis: 50%;
+  }
+
   .reverse-column {
     flex-flow: row-reverse;
   }
@@ -461,3 +515,4 @@ img.row__images {
     }
   }
 }
+
