@@ -1,3 +1,6 @@
+var SimpleLightbox = require('simple-lightbox');
+
+
 // mobileMenu();
 
 let hamburger = document.querySelector('#hamburger');
