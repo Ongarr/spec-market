@@ -1,4 +1,10 @@
 var SimpleLightbox = require('simple-lightbox');
+var AOS = require('aos');
+AOS.init({
+  duration: 1200
+});
+
+
 
 
 // mobileMenu();

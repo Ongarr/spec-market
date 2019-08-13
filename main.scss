@@ -1,11 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web&display=swap);
+
 $black: black;
 $red: #be1d2c;
 $redhero: rgba(190, 29, 44, 0.75);
 $lightgrey: rgba(239, 239, 239, 1);
-
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 
 
 @keyframes appear {
@@ -365,7 +364,7 @@ nav {
 }
 
 .opening,
-.phone {
+.phone, .mail {
   display: flex;
   align-items: center;
   margin-bottom: 25px;

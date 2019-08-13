@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.scss">
     <link rel="stylesheet" href="/node_modules/simple-lightbox/dist/simpleLightbox.css">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
 </head>
 
 <body>
@@ -33,7 +34,8 @@
             </nav>
         </div>
         <div class="header__hero header__hero__text header__hero__festool center-item">
-            <div class="hero__text__wrapper">
+            <div class="hero__text__wrapper" data-aos="zoom-out-up"
+            data-aos-duration="3000">
                 <h2>Elektronarzędzia</h2>
                 <img class="header__logo" src="/assets/images/Logo Festool.png" alt="elektronarzędzie festool"></img>
             </div>
@@ -44,7 +46,7 @@
     </header>
 
     <div class="container" id="scrollto">
-        <div class="row">
+        <div class="row" data-aos="fade-right">
             <div class="column__text">
                 <h2 class="underline">Ręka sama idzie!</h2>
                 <p class="text-para">Festool - niebanalne elektronarzędzia z możliwie najwyższej półki. Tak to prawda
@@ -60,7 +62,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-left">
             <div class="column__text">
                 <h2 class="underline">Lepiej pracować z systemem</h2>
                 <p class="text-para">Wszystkie te elementy składają się na kompletny system pracy Festool. Bo to jest
@@ -85,7 +87,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-right">
             <div class="column__text">
                 <h2 class="underline">Teraz Festool…</h2>
                 <p class="text-para">Szlifierka RG 130, tarcza DIA THERMO D 130, odkurzacz CTL AC 26 HD- usuwamy
@@ -110,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <div class="gallery">
         <a href="/assets/images/gallery/festool/festool-kozieglowy-spec-market (1).jpg"><img src="/assets/images/gallery/festool/festool-kozieglowy-spec-market (1).jpg" alt="" srcset=""></a>
         <a href="/assets/images/gallery/festool/festool-kozieglowy-spec-market (2).jpg"><img src="/assets/images/gallery/festool/festool-kozieglowy-spec-market (2).jpg" alt="" srcset=""></a>
@@ -130,6 +132,11 @@
         <div class="row">
             <div class="column column__contact-info">
                 <div class="column__text_contact__icon">
+                    <div class="mail"><img src="/assets/images/mail.svg" alt="" srcset="">
+                        <a href="mailto:info@spec.market">
+                            <p>info@spec.market</p>
+                        </a>
+                    </div>
                     <div class="phone"><img src="/assets/images/call.svg" alt="" srcset="">
                         <a href="tel:48508505777">
                             <p>+48 508 505 777</p>

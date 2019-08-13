@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
 </head>
 
 <body>
@@ -33,11 +34,11 @@
         </div>
         <div class="header__hero header__hero__text header__hero__mainpage center-item ">
             <div class="row center-item">
-                <div class="header__hero__big_text">
+                <div class="header__hero__big_text" data-aos="fade-down-left">
                     <h2>spec.market</h2>
                     <h4>Sklep budowlany - Koziegłowy</h4>
                 </div>
-                <div class="icons">
+                <div class="icons" data-aos="fade-down-left">
                     <div class="phone"><img src="/assets/images/call.svg" alt="" srcset="">
                         <a href="tel:48508505777">
                             <p>+48 508 505 777</p>
@@ -63,7 +64,7 @@
     <div class="container" id="about__us">
         <div class="row column-padding">
             <div class="about">
-                <div class="column__text">
+                <div class="column__text" data-aos="fade-down">
                     <h2 class="underline center-txt">O nas</h2>
                     <p>SPEC.market to połączenie sklepu ogólnobudowlanego, instalacyjnego, narzędziowego, elektrycznego
                         i gospodarstwa domowego. Zaopatrujemy wyspecjalizowanych fachowców, firmy budowlane, ale mamy
@@ -78,8 +79,8 @@
         </div>
     </div>
     <div class="container">
-        <div class="row" id="tikurilla">
-            <div class="column ">
+        <div class="row" id="tikurilla" data-aos="fade-right">
+            <div class="column">
                 <div class="column-padding">
                     <img class="logo-brand" src="/assets/images/Tikkurila_Logo.png" alt="Logo Tikurilla">
                     <p>Zapraszamy do naszej mieszalni farb gdzie stworzysz wymarzony dla siebie kolor. Dzięki współpracy
@@ -101,11 +102,11 @@
 
 
         </div>
-        <div class="row reverse-column" id="festool">
+        <div class="row reverse-column" id="festool" data-aos="fade-left">
             <div class="column">
                 <div class="column-padding">
                     <img class="logo-brand" src="/assets/images/Logo Festool.png" alt="Logo Tikurilla">
-                    <p>Jesteśmy autoryzowanym dystrybutorem marki <b>Festool</b> która jest ceniona za niezawodność i
+                    <p data-aos="fade-in">Jesteśmy autoryzowanym dystrybutorem marki <b>Festool</b> która jest ceniona za niezawodność i
                         innowacyjność swoich elektronarzędzi dla branży stolarskiej, ciesielskiej i budowlanej.
                         Zajmujemy
                         się organizacją szkoleń i pokazów oraz pełnym doradztwem w zakresie doboru odpowiednich maszyn
@@ -129,6 +130,11 @@
         <div class="row">
             <div class="column column__contact-info">
                 <div class="column__text_contact__icon">
+                    <div class="mail"><img src="/assets/images/mail.svg" alt="" srcset="">
+                        <a href="mailto:info@spec.market">
+                            <p>info@spec.market</p>
+                        </a>
+                    </div>
                     <div class="phone"><img src="/assets/images/call.svg" alt="" srcset="">
                         <a href="tel:48508505777">
                             <p>+48 508 505 777</p>
