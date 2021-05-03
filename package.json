@@ -19,8 +19,6 @@
   "dependencies": {
     "aos": "^2.3.4",
     "autoprefixer": "^9.6.0",
-    "parcel": "^1.12.3",
-    "parcel-bundler": "^1.12.3",
     "simple-lightbox": "^2.1.0"
   }
 }
